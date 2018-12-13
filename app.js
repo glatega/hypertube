@@ -50,6 +50,8 @@ db.on('error', function(err) {
 
 var app = express();
 
+app.use(express.static("assets"));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
